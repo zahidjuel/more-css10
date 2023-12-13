@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+        .field{
+            width: 780px;
+            height: 380px;
+            background-color: green;
+        }
+
+        .ball{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            /* animation: ping-pong 2s ease-in-out 3s infinite alternate; */
+            animation: bounce 5s ease-in-out 3s infinite alternate;
+            
+        }
+
+        /* @keyframes ping-pong {
+            from{
+                left: 0px;
+            }
+            to{
+               left: 700px;
+            }
+        } */
+
+        @keyframes bounce {
+            0%{
+                left: 0px;
+                top: 0px;
+                background-color: brown;
+            }
+            25%{
+                left: 175px;
+                top: 300px;
+                background-color: blue;
+            }
+            50%{
+                left: 350px;
+                top: 0px;
+                background-color: black;
+            }
+            75%{
+                left: 525px;
+                top: 300px;
+                background-color: bisque;
+            }
+            100%{
+                left: 700px;
+                top: 0px;
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore Animation</h1>
+    <div class="field">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

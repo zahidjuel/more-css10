@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable</title>
+    <style>
+        :root{
+            --primary-color: purple;
+            --secondary-color: rgba(117, 104, 117, 0.495);
+            --font-size: 22px;
+            --longX: 800px;
+            --longY: 500px; 
+        }
+        h1{
+            color: var(--primary-color);
+        }
+        .box{
+            width: var(--longX);
+            height: var(--longY);
+            background-color: var(--secondary-color);
+            font-size: var(--font-size);
+            color: whitesmoke;
+        }
+        .container{
+            display: grid;
+            height: var(--longY);
+            gap: 10px;
+            grid-template-columns: 200px calc(100% - 200px);
+            margin: 20px;
+        }
+        .sidebar{
+            background-color: var(--primary-color);
+
+        }
+        .content{
+            background-color: var(--secondary-color);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>I am exploring css variable</h1>
+   <div class="box">
+    <h4>CSS variable</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse vero adipisci inventore, facere atque nemo animi nisi! Repellendus, molestiae? Labore?</p>
+   </div>
+   <div class="container">
+    <div class="sidebar">
+        sidebar
+    </div>
+    <div class="content">
+        Content
+    </div>
+   </div>
+</body>
+</html>

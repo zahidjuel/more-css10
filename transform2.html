@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explore transform</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+            /* border: 1px solid rebeccapurple; */
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            margin: 5px 0px;
+
+            /* transform: scale(0.5); */
+            /* transform: scaleX(0.5) scaleY(0.75); */
+            /* transform: translateY(50px); */
+            /* transform: translateX(50px) rotate(45deg) scale(0.5); */
+            /* transform: skew(120deg); */
+        }
+        .inner:hover{
+            transform: translateX(50px) rotate(45deg) scale(0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">inner-1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner-2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner-3</div>
+    </div>
+</body>
+</html>
